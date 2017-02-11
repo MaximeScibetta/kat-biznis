@@ -7,10 +7,26 @@
  */
 
  html{
-    background-color: yellow;
-    
+    background:url('../images/stardust-bcg.png') repeat;
+    font-family: sans-serif;
     body{
         display: flex;
-        color: red;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height:100vh;
+
+        color: #fff;
+        margin:0;
+        padding:0;
+        #card{
+            color:#000;
+            height: 250px;
+            width:500px;
+            }
+        .front, .back{
+            background:url('../images/card-bcg.png') repeat;
+            width: 500px;
+            }
+        }
     }
- }

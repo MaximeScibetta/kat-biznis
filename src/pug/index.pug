@@ -5,6 +5,16 @@ html( lang="fr" )
         title Ma carte de visite
         link( rel="stylesheet", href="assets/css/styles.css" )/
     body
-        h1 Ma carte de visite
+        div#card
+            div.front
+                p.firstname Maxime
+                p.name Scibetta
+                p.profession Student
+            div.back
+                p.website http://maxime-scibetta.be
+                p.email maxime.scibetta@outlook.com
+                p.phone 04 71 37 86 14
 
+        script( src="https://code.jquery.com/jquery-2.1.4.min.js" )
+        script( src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js" )
         script( src="assets/js/script.js" )

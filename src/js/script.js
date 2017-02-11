@@ -5,4 +5,7 @@
  * coded by maxime@flatLand !
  * started at 09/02/2017
  */
- console.log("Hellow world !");
+$("#card").flip( {
+    axis: 'x',
+    trigger: 'hover'
+} );
