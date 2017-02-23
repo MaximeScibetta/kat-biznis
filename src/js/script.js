@@ -5,7 +5,12 @@
  * coded by maxime@flatLand !
  * started at 09/02/2017
  */
-$("#card").flip( {
-    axis: 'x',
-    trigger: 'hover'
+const $main = document.querySelector( "main" );
+// document.querySelector( "nav a" ).addEventListener( "click", function( oEvent ) {
+//     oEvent.preventDefault();
+//     $main.classList.toggle( "flipped" );
+// } );
+document.querySelector( "nav a" ).addEventListener( "click", ( oEvent ) => {
+    oEvent.preventDefault();
+    $main.classList.toggle( "flipped" );
 } );

@@ -3,17 +3,32 @@ html( lang="fr" )
     head
         meta( charset="utf-8" )/
         title Ma carte de visite
+        meta( name="viewport", content="width=device-width, initial-scale=1.0, minimum-scale=1.0" )/
         link( rel="stylesheet", href="assets/css/styles.css" )/
     body
-        div#card
-            div.front
-                p.firstname Maxime
-                p.name Scibetta
-                p.profession Student
-            div.back
-                p.website http://maxime-scibetta.be
-                p.email maxime.scibetta@outlook.com
-                p.phone 04 71 37 86 14
+        main
+            section.face
+                h1
+                    strong= lastname
+                    = " "
+                    span= firstname
+                p= position
+            section.back
+                h2= firstname + " " + lastname
+                dl
+                    dt Email
+                    dd= email
+                    dt Téléphone
+                    dd= phone
+                    dt Site web
+                    dd= url
+        nav
+            a.flip( href="javascript:void(0);" )
+                include ../../assets/images/flip-icon.svg
+                = " "
+                span retourner la carte
+        footer
+            small ©2017 #[a( href="https://github.com/MaximeScibetta" ) Skred]
 
         script( src="https://code.jquery.com/jquery-2.1.4.min.js" )
         script( src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js" )
